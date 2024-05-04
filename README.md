@@ -30,7 +30,7 @@ Linux:
 
 ## Imagem, Contêineres, Volumes e Rede
 
-Nessa aplicação, foram utilizado de algumas imagens, sejam elas o frontend, backend, banco de dados, phpMyAdmin. Para guardar informações, foram criados dois volumes, um para o banco de dados e outro para os logs do backend. Assim como uma rede que faz com que os contêineres conversem entre si utlizando o nome de cada serviço.
+Nessa aplicação, foram utilizadas algumas imagens, sejam elas o frontend, backend, banco de dados e o phpMyAdmin. Para guardar informações, foram criados dois volumes, um para o banco de dados e outro para os logs do backend. Assim como uma rede que faz com que os contêineres conversem entre si utlizando o nome de cada serviço.
 
 ## Como testar?
 
