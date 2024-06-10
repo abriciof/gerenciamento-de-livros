@@ -1,7 +1,16 @@
-# Webacademy Docker - Trabalho Prático
-
+# Gerenciamento de Livros
   
 > Fabrício da Costa Guimarães
+
+## Sobre
+
+Aplicação Full Stack com:
+
+- FrontEnd: Uso do React em TypeScript
+- BackEnd: Uso do ExpressJs e Sequelize em TypeScript.
+- Banco de Dados: MySQL
+- Deploy: Docker e Docker Compose (Services, Volumes, Networks, Environments e etc)
+
 
 ## Instalação
 
