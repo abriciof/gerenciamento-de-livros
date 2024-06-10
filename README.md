@@ -42,10 +42,3 @@ Você pode verificar separadamente se o livro foi salvo em dois outros lugares, 
 
 Em todos esses casos, é possível verificar a interação entre os contêineres. Em caso de remoção dos contêiners e imagens, todos os dados do banco ficam salvos no volume criado, que pode facilmente recuperar o estado da aplicação.
 
-## Desafios durante o desenvolvimento
-Para criar a database *livraria* e a tabela *livros* durante o build, teve que copiar o [script.sql](https://github.com/abriciof/webacademy-docker/blob/main/mysql/dump/script.sql) para /docker-entrypoint-initdb.d/ dentro do container do mysql. Verifiquei que esse script demovara um pouco para rodar durante o build. 
-
-Mesmo com o backend tendo o atributo **depends_on: - mysql**, o backend rodava assim que o mysql tinha começado a rodar, porém o scritp inicial demorava um pouco mais, o que resultou em vários crashes na conexão do Sequelize no backend, que não conseguia se conectar. 
-
-Para resolver o problema, foi preciso adicionar um parâmetro de **restart: always** no serviço do backend no docker-compose. Assim, em uma próxima vez que o backend fosse tentar conectar ao banco, ele consiga executar depois da criação da database e da tabela.
-
